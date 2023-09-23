@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kea-Restaurant</title> 
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="contact.css">
+  
+</head>
+<body>
+  
+  <header id="header">
+    <div class="h1-header">
+    <H1 class="title_rest">Restaurant KEA</H1>
+    </div>
+        
+    <nav class="nav-m">
+       <ul class="ul_nav"> 
+        <li><a class="#" href="index.html"> Home </a></li>
+        <li><a class="#" href="menu.html"> Menu</a></li>
+        <li><a class="#" href="contact.html"> Contact </a></li>
+      </ul>
+     </nav>
+</header>
+
+<main id="contact_us">
+     
+        <section class="contact_info">
+            
+      <div class="locaction_map">
+            <img class="locationkea" src="/imgs/map.jpg" alt="location">
+          </div>
+          <div class="text_info">    
+            <p>Address: Guldbergsgade 29N 2200 Copenhagen</p>
+            <p>Phone no.: 20 82 53 70</p>
+            <p>E-mail:<a href="info@restaurantkea.dk"> <i>info@restaurantkea.dk</i></a></p>
+      </div>
+        </section>
+      
+         <!-- restaurant contact form-->
+
+         
+    <section class="contact_form">
+        <form id="form_contac" action="" method="post"
+        
+        > <fieldset> <legend>Contact us </legend>
+           <p class="texto"> <label for="">Full Name :</label>
+            <input name="" type="text" name="person-name" id="Name" maxlength="30" required 
+            placeholder=" fx.Juan">
+       </p>
+            
+            <p class="texto"><label for="last-name"> Last name: </label>
+                  <input name="" type="text" name="person-name" id="Name" maxlength="30" 
+            required placeholder=" fx.Jensen"></p>
+            
+            <p class="texto"><label for="telephone">Phone No.</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+            required maxlength="8" placeholder=" fx. 52 60 54 00"></p>
+
+           <p class="texto"> <label for="email"> E-mail </label>
+             
+            <input type="email"  id="email" name="email" required maxlength="20"></p>
+
+           <p class="texto"> <label for="persons">Persons</label> 
+            <input type="number" required></p>
+
+            <p class="texto"><label for="date">Date and time </label> 
+            <input type="datetime-local"></p>
+            <p><label class="message">Your message</label> </p>
+          <p><textarea class="text_a" rows="5" cols="50" 
+            name="comment" form="usrform"></textarea></p>
+         
+            <input class="buttom" type="submit" value=" SEND">
+        </form>
+      </fieldset>     
+</section>
+</main>
+
+<footer id="footer">
+    <div class="footer_contact">
+      <p>© KEA-2023 </p>  
+    </div>
+</footer>
+
+
+</body>
+</html>

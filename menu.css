@@ -1,0 +1,211 @@
+:root {
+    --header-color:#e12519;
+    --background:#ffffff;
+    --blue_kea:#32456d;
+    --font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    --border-radius: 10px;
+    --font-size:20px;
+    --ms-grid-column:1fr 4fr 1fr;
+    --border-radius-buttom:3px;
+    } 
+    
+    @media (min-width: 1024px)  { 
+  
+        #header{
+        display:flex;
+        flex-direction:column;
+        margin: 0;
+        background-color: var(--blue_kea);
+       
+      }
+
+    .nav-m{
+      display: flex;
+      margin: 5px;
+     }
+
+
+      #menu_food{
+        display: grid;
+        grid-template-columns: 600px 600px;
+        grid-template-rows: 300px 300px;
+        justify-content: center;
+        gap:5px;
+        margin-left: 150px;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+      }
+ 
+
+.art_item_card{
+    background-color: bisque;
+    margin: 5px;
+    columns: 2;
+    margin: 10px;
+    border-radius: var(--border-radius);
+}
+.img_item_food{
+    width:250px;
+    height:auto;
+    flex-shrink: 0;
+    object-fit: cover;
+    justify-items: end;
+    float: right;
+    border-radius:var(--border-radius);
+}
+p{
+    font-size: 19px;
+    margin: 15px;
+}
+h2{
+    margin: 15px;
+}
+.pris{
+    display: flex;
+    background-color: var(--header-color);
+    width: 4rem;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: var(--border-radius-buttom);
+}
+.art_item_card {
+    display: flex;
+       flex-direction: row-reverse;
+       padding: 1rem;
+    }
+    li{
+        list-style-type: none;
+        margin-left: 15%;
+        color:var(--header-color);
+    
+    }
+    a{
+        color: #ffffff;
+        text-decoration: none;
+        margin: 10px;
+        font-size: 20px;
+    }
+
+}
+/* MOBIL VERSION food menu*/
+
+@media (min-width:320px) and (max-width: 576px){
+    body{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 3fr auto;
+    }
+    #header{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #32456d;
+
+
+}
+    #main_menu{
+        margin:0;
+    }
+    .h1-header{
+        display:grid;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .nav-m li{
+               display:flex;
+        align-items:center;
+        border-bottom: 1px solid white;
+        width: 8rem;
+       justify-content: center;
+       padding: 5px;
+       margin: 10px;
+
+    }  
+    
+    .home{
+    margin-top:0px;
+      margin: 1rem;
+      justify-content: center;
+      align-items: center; 
+    }
+
+    .art_item_card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction:column;
+        margin: 1rem;
+        background-color: bisque;
+        margin: 5px;
+        columns: 2;
+        margin: 10px;
+        border-radius: var(--border-radius);
+        padding:1px;
+    }
+    .art_item_card div{
+        margin: 1rem;
+
+    }
+    #main_menu{
+        margin-top: 5px;
+
+    }
+    .img_item_food{
+    padding: 10px;
+       border-radius:var(--border-radius);
+    }
+   
+    .pris{
+     display: flex;
+     width: 4rem;
+     justify-content: center;
+     border: 2px solid black;
+     border-radius: var(--border-radius-buttom);
+     background-color: var(--header-color);
+     margin: 1rem;
+    }
+
+
+}
+/* tablet*/
+@media (min-width:577px) and (max-width: 1024px){
+    body{
+       display: flex;
+       justify-content: center;
+       flex-direction: column; 
+       box-sizing: content-box;
+    }
+   
+
+
+
+
+
+.art_item_card {
+   display: flex;
+   flex-direction: row-reverse;
+   padding: 1rem;
+
+   margin: 1rem;
+   background-color: bisque;
+   border-radius: var(--border-radius);
+   padding:10px;
+
+
+
+
+}
+.pris{
+    display: flex;
+    background-color: var(--header-color);
+    width: 4rem;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: var(--border-radius-buttom);
+    margin:1rem;
+}
+
+
+}
